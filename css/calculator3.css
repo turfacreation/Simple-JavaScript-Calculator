@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #919191;
+	font-family: "Roboto", sans-serif;
+}
+
+.calculator {
+	width: 340px; /* Full width to fit 4 columns */
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: #f8f9fa;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* History Section */
+#history {
+	min-height: 40px;
+	font-size: 16px;
+	color: #6c757d;
+	text-align: right;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+}
+
+/* Button layout */
+#keyboard {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+	gap: 5px; /* Adds spacing  */
+	justify-content: center;
+}
+
+.btn-custom {
+	width: 100%; /* Full width inside the grid */
+	height: 60px; /*  button height */
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn-custom:active {
+	transform: scale(0.95);
+}
+
+/* Hide empty button  */
+.empty {
+	visibility: hidden;
+}

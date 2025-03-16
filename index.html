@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Learn JavaScript | Assignment-23</title>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="./css/calculator3.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container">
+				<div
+					class="shadow-lg p-3 mb-5 bg-body-tertiary text-primary text-center">
+					<h1>Freedom IT Institution</h1>
+					<h3>Assignment-23</h3>
+					<h3>Project: Create Calculator with JavaScript</h3>
+					<h3>Prepared By: Md Fahmiduzzaman Sagar</h3>
+					<h3>Mentor: Rtr Rabiul Hossain</h3>
+				</div>
+			</div>
+			<div class="container">
+				<div class="calculator text-center p-3">
+					<h3>Calculator</h3>
+
+					<!-- History Section -->
+					<div id="history"></div>
+
+					<input
+					
+						type="text"
+						id="display"
+						class="form-control mb-2 text-end fs-5"
+						disabled />
+
+					<div id="keyboard">
+						<button class="btn btn-danger btn-custom" onclick="clearDisplay()">
+							C
+						</button>
+						<button class="btn btn-danger btn-custom" onclick="deleteLast()">
+							CE
+						</button>
+						<button
+							class="btn btn-warning btn-custom"
+							onclick="appendToDisplay('%')">
+							%
+						</button>
+						<button
+							class="btn btn-primary btn-custom"
+							onclick="appendToDisplay('-')">
+							-
+						</button>
+
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('7')">
+							7
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('8')">
+							8
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('9')">
+							9
+						</button>
+						<button
+							class="btn btn-primary btn-custom"
+							onclick="appendToDisplay('*')">
+							×
+						</button>
+
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('4')">
+							4
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('5')">
+							5
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('6')">
+							6
+						</button>
+						<button
+							class="btn btn-primary btn-custom"
+							onclick="appendToDisplay('+')">
+							+
+						</button>
+
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('1')">
+							1
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('2')">
+							2
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('3')">
+							3
+						</button>
+						<button
+							class="btn btn-primary btn-custom"
+							onclick="appendToDisplay('/')">
+							/
+						</button>
+
+						<button class="empty btn-custom"></button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('0')">
+							0
+						</button>
+						<button
+							class="btn btn-secondary fs-4 btn-custom"
+							onclick="appendToDisplay('.')">
+							.
+						</button>
+						<button
+							class="btn btn-success btn-custom"
+							onclick="calculateResult()">
+							=
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/calculator3.js"></script>
+		<!-- <script>
+			let x = 5;
+			let y = x / 0; // No issue, result is Infinity
+
+			let result = eval("5++3"); // ❌ ERROR: Invalid Expression!
+			console.log(result); // ❌ JavaScript stops execution here
+			console.log("This line won't run!");
+		</script> -->
+	</body>
+</html>
